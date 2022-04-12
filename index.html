@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Customer Satisfaction</title>
+
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+       <div class="container  text-center">
+           <div class="title"><h1 id="title">Customer Satisfaction Survey</h1></div>
+           <div class="description"><p id="description">We Want to hear from you.</p></div>
+       </div>
+   </header> 
+
+   <form action="" method="get" id="survey-form">
+    <div class="container form-items">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="container form-items">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" name="email" id="email"  placeholder="Enter your email" required>
+    </div>
+    <div class="container form-items">
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" name="age" id="number" placeholder="Enter your age" min="18" max="60">
+    </div>
+    <div class="container form-items">
+        <label for="work-select">What industry are you in?</label>
+        <select name="work" id="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Administrative">Administrative</option>
+            <option value="Education">Education</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Final Services">Final Services</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Sales">Sales</option>
+        </select>
+    </div>
+    <div class="container">
+        <p>How well do our product meet your needs</p>
+        <div class="form-items">
+        <div>
+        <input type="radio" id="very-well" name="well" value="very well"
+               checked>
+        <label for="verywell">very well</label>
+        </div>
+        <div>
+            <input type="radio" id="somewhat-well" name="well" value="Somewhat well">
+            <label for="somewhat-well">Somewhat well</label>
+        </div>
+        <div>
+            <input type="radio" id="not-so-well" name="well" value="not so well">
+            <label for="not-so-well">not so well</label>
+        </div>
+        <div>
+            <input type="radio" id="not-at-all-well" name="well" value="not at all well">
+            <label for="not-at-all-well">not at all well</label>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p>Which of the following words would you use to describe our products?</p>
+        <div class="form-items">
+        <div>
+            <input type="checkbox" id="reliable" name="our-product" value="reliable" checked>
+            <label for="reliable">Reliable</label>
+        </div>
+        <div>
+            <input type="checkbox" id="high-quality" name="our-product" value="High Quality">
+            <label for="high-quality">High Quality</label>
+        </div>
+        <div>
+            <input type="checkbox" id="usefull" name="our-product" value="Usefull">
+            <label for="usefull">Usefull</label>
+        </div>
+        <div>
+            <input type="checkbox" id="unique" name="our-product" value="Unique">
+            <label for="unique">Unique</label>
+        </div>
+        <div>
+            <input type="checkbox" id="overpriced" name="our-product" value="Overpriced">
+            <label for="overpriced">Overpriced</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ineffective" name="our-product" value="Ineffective">
+            <label for="ineffective">Ineffective</label>
+        </div>
+        <div>
+            <input type="checkbox" id="poor-quality" name="our-product" value="Poor Quality">
+            <label for="poor-quality">Poor Quality</label>
+        </div>
+        <div>
+            <input type="checkbox" id="unreliable" name="our-product" value="Unreliable">
+            <label for="unreliable">Unreliable</label>
+        </div>
+        </div>
+    </div>
+    <div class="container form-items">
+        <label for="comments">Do you have any other comments, questions, or concerns?</label>
+        <textarea id="comments" name="comments" rows="5" cols="33">
+        </textarea>
+    </div>
+    <div class="container">
+        <button name="button" id="submit">SUBMIT</button>
+    </div>
+   </form>
+
+   <!-- validasi freecodecamp -->
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
