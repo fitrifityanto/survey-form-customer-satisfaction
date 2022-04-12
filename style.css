@@ -22,6 +22,12 @@ body {
     line-height: 1.5rem;
 }
 
+@media (max-width: 40em) {
+    body {
+        font-size: 1rem;
+    }
+  }
+
 h1, h2, h3 {
     margin: 1rem 0;
     line-height: 1.8rem;
